@@ -8,3 +8,5 @@ print(my_func("Python developer"))
 print("Welcome")
 
 print("Hello world")
+
+print("kajol added a new line")
