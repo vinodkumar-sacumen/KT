@@ -8,7 +8,6 @@ def wish():
 
 print(my_func("Python developer"))
 
-
 def add(num1: int, num2: int)-> int:
     """Sum of 2 numbers.
 
@@ -20,4 +19,3 @@ def add(num1: int, num2: int)-> int:
         int: result of int which is sum of num1 and num2.
     """
     return num1 + num2
-
