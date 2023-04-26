@@ -1,12 +1,3 @@
 # KT
 
-Updated the code.
-
-
-Added one more change here.
-
-Added a new line
-
-Adding another new line
-
-branch2's new line
+### This is a demo python code base for GitHub...
