@@ -6,3 +6,5 @@ def my_func(name: str)-> str:
 print(my_func("Python developer"))
 
 print("Welcome")
+
+print("Hello world")
