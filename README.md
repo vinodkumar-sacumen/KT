@@ -1,7 +1,10 @@
-# KT
+# KT - Python
 
-### This is a demo python code base for GitHub...
+Session that consists of all basic operations.
 
-Pragathi adaded a new line
+## Sessions/Topics
 
-Vinod added a new line
+- Git
+- Python
+- Test case - Pytest
+- Standards
