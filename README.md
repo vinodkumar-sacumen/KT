@@ -8,3 +8,5 @@ Session that consists of all basic operations.
 - Python
 - Test case - Pytest
 - Standards
+
+HI Pragati 
