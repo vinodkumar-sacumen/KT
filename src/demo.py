@@ -1,9 +1,12 @@
 """Demo python file."""
 
+import requests
+from requests import Response
+
 def my_func(name: str)-> str:
     return f"Hello {name}, welcome to Sacumen." 
 
-print(my_func("Python developer"))
+# print(my_func("Python developer"))
 
 
 def add(num1: int, num2: int)-> int:
@@ -18,4 +21,14 @@ def add(num1: int, num2: int)-> int:
     """
     return num1 + num2
     
+# print(add("hello", 20))
 
+def fetch(url: str)-> Response:
+    """Method to fetch data from an API.
+
+    Args:
+        url (str): Actual url required to fetch data from.
+    """
+    return requests.get(url)
+    
+# print(fetch(url="https://api.publicapis.org/entries"))
