@@ -20,3 +20,13 @@ After pdoc3 is installed, you can just run the below command to generate your do
 pdoc --html .
 ```
 
+## Sort your imports using isort
+Isort package/library is used to sort all your import statements in your projects.
+To install isort..
+```
+pip install isort
+```
+To run and sort all your imports. Dot (.) represents entire code base.
+```
+isort [folder/filename.txt] or .
+```
