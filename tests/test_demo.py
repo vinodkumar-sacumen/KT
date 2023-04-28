@@ -1,7 +1,9 @@
 """Test cases for all methods in demo.py file."""
 
 from typing import Any
+
 import pytest
+
 from src.demo import add, fetch
 from tests.mocks.functions import mock_api_failure, mock_api_success
 

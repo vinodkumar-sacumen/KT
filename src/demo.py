@@ -3,6 +3,7 @@
 import requests
 from requests import Response
 
+
 def my_func(name: str)-> str:
     return f"Hello {name}, welcome to Sacumen." 
 

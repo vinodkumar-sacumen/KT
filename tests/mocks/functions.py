@@ -1,7 +1,8 @@
 """Mocks"""
-from requests import Response
 import json
-from typing import Any, List, Dict
+from typing import Any, Dict, List
+
+from requests import Response
 
 
 def mock_api_success(*args: List[Any], **kwargs: Dict[str, Any]) -> Response:
