@@ -29,15 +29,15 @@ repos:
     hooks:
       - id: bandit
         args: ['--exclude=tests']
-  - repo: https://github.com/pycqa/isort
-    rev: 5.5.2
-    hooks:
-    -   id: isort
-  - repo: https://gitlab.com/pycqa/flake8
+  # - repo: https://github.com/pycqa/isort
+  #   rev: 5.5.2
+  #   hooks:
+  #   -   id: isort
+  - repo: https://github.com/pycqa/flake8
     rev: 3.9.2
     hooks:
       - id: flake8
-        args: ['--config=setup.cfg', '--ignore=E203,E302,E402,E501,W503,E722,C901', '--max-line-length=200']
+        # args: ['--config=setup.cfg', '--ignore=E203,E302,E402,E501,W503,E722,C901', '--max-line-length=200']
   - repo: https://github.com/pycqa/pydocstyle
     rev: 6.1.1
     hooks:
@@ -62,7 +62,7 @@ repos:
         name: pytest-cov
         stages: [commit]
         language: system
-        entry:  pytest -v --cov-config=setup.cfg --cov=src/
+        entry:  pytest -v --cov=src/
         types: [python]
         pass_filenames: false
         always_run: true

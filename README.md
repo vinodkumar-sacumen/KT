@@ -30,3 +30,14 @@ To run and sort all your imports. Dot (.) represents entire code base.
 ```
 isort [folder/filename.txt] or .
 ```
+
+## Tune code using black
+Black aims for consistency, generality, readability and reducing git diffs.
+To install black.
+```
+pip install black
+```
+To run black on files.
+```
+black folder/files
+```
