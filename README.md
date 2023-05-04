@@ -41,3 +41,15 @@ To run black on files.
 ```
 black folder/files
 ```
+
+## Generate security reports using bandit
+Bandit is used to scan files/lines of code in order to check for any security issues in
+code base.
+To install Bandit.
+```
+pip install bandit
+```
+To run bandit on files.
+```
+bandit {{filename}} or bandit -r {{foldername}}
+```

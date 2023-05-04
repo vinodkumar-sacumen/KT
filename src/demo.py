@@ -3,9 +3,10 @@
 import requests
 from requests import Response
 
+PASSWORD = "password123"
 
 def my_func(name: str)-> str:
-    return f"Hello {name}, welcome to Sacumen." 
+    return f"Hello {name}, welcome to Sacumen."
 
 # print(my_func("Python developer"))
 
@@ -21,7 +22,7 @@ def add(num1: int, num2: int)-> int:
         int: result of int which is sum of num1 and num2.
     """
     return num1 + num2
-    
+
 # print(add("hello", 20))
 
 def fetch(url: str)-> Response:
@@ -30,6 +31,10 @@ def fetch(url: str)-> Response:
     Args:
         url (str): Actual url required to fetch data from.
     """
-    return requests.get(url)
-    
+    params = {
+        "username":"vinod",
+        "password": PASSWORD
+    }
+    return requests.get(url, params=params)
+
 # print(fetch(url="https://api.publicapis.org/entries"))
