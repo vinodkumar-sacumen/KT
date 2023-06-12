@@ -3,12 +3,19 @@
 import requests
 from requests import Response
 
-PASSWORD = "password123"
+# PASSWORD = "password123"
 
 
 def my_func(name: str) -> str:
-    return f"Hello {name}, welcome to Sacumen."
+    """Demo my function.
 
+    Args:
+        name (str): name of type string
+
+    Returns:
+        str: returns a phrase with the name passed.
+    """
+    return f"Hello {name}, welcome to Sacumen."
 
 # print(my_func("Python developer"))
 
@@ -30,13 +37,12 @@ def add(num1: int, num2: int) -> int:
 
 
 def fetch(url: str) -> Response:
-    """Method to fetch data from an API.
+    """Fetch the data from an API.
 
     Args:
         url (str): Actual url required to fetch data from.
     """
-    params = {"username": "vinod", "password": PASSWORD}
-    return requests.get(url, params=params)
+    return requests.get(url, timeout=20)
 
 
 # print(fetch(url="https://api.publicapis.org/entries"))
