@@ -52,3 +52,6 @@ def fetch(url: str) -> Response:
 def fun():
     return "hello world"
 
+def vinod()-> None:
+    """Demo Method"""
+    return "Nothing"
