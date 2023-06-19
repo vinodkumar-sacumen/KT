@@ -46,3 +46,7 @@ def fetch(url: str) -> Response:
 
 
 # print(fetch(url="https://api.publicapis.org/entries"))
+
+def vinod()-> None:
+    """Demo Method"""
+    return "Nothing"
