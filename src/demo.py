@@ -55,3 +55,6 @@ def fun():
 def vinod()-> None:
     """Demo Method"""
     return "Nothing"
+
+def Ashwini():
+    return "Hi"

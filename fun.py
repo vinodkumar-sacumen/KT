@@ -22,7 +22,7 @@ def to_capital(fun):
     return inner
 
 
-# @to_capital
+@to_capital
 def greet():
     return "fork demo"
 print(greet())
