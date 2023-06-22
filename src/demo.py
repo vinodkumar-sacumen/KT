@@ -56,5 +56,5 @@ def vinod()-> None:
     """Demo Method"""
     return "Nothing"
 
-def fun1():
+def fun_review():
     return "add reviewer"
