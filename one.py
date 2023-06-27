@@ -4,14 +4,14 @@ from requests import Response
 from tests.mocks import functions
 
 
-# def fetch(url):
-#     response = requests.get(url)
-#     print(response.status_code)
-#     print(response.content)
-#     return response
+def fetch(url):
+    response = requests.get(url)
+    print(response.status_code)
+    print(response.content)
+    return response
 
 
-# print(fetch(url="https://api.publicapis.org/entries"))
+print(fetch(url="https://api.publicapis.org/entries"))
 
 
 def fetch(url):
@@ -27,9 +27,3 @@ def fetch(url):
 
 
 fetch("https://api.publicapis.org/entries")
-
-
-# @pytest.mark.vcr("tests/cassettes/")
-# def test_fetch_vcr(s):
-#     response = fetch(url="https://api.publicapis.org/entries")
-#     assert response.status_code == 200
