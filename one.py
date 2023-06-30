@@ -1,35 +1,36 @@
-import pytest
-import requests, pytest_mock, pytest_vcr
+import pytest, json
+import requests
 from requests import Response
 from tests.mocks import functions
 
 
-# def fetch(url):
-#     response = requests.get(url)
-#     print(response.status_code)
-#     print(response.content)
-#     return response
-
-
-# print(fetch(url="https://api.publicapis.org/entries"))
-
-
 def fetch(url):
-    response = requests.get(url)
-    response.raise_for_status()
-    data = response.json()
-    count = data["count"]
-    count1 = 1425
-    if count == count1:
-        print(f"count = {count}")
-    else:
-        print(f"count={count1}")
+    try:
+        response = requests.get(url)
+        response.raise_for_status()
+
+        return response.json()
+    except requests.exceptions.RequestException as e:
+        raise RuntimeError(f"An error occurred : {str(e)}")
 
 
-fetch("https://api.publicapis.org/entries")
+print(fetch(url="https://api.publicapis.org/entries"))
 
 
-# @pytest.mark.vcr("tests/cassettes/")
-# def test_fetch_vcr(s):
-#     response = fetch(url="https://api.publicapis.org/entries")
-#     assert response.status_code == 200
+def fetch_count_one(url):
+    try:
+        response = requests.get(url)
+        response.raise_for_status()
+        data = response.json()
+        count = data["count"]
+        print(f"count={count}")
+        count1 = 1425
+        if count == count1:
+            print(f"count = {count}")
+        else:
+            print(f"count={count1}")
+    except requests.exceptions.RequestException as e1:
+        raise RuntimeError(f"An error occurred : {str(e1)}")
+
+
+fetch_count_one("https://api.publicapis.org/entries")
