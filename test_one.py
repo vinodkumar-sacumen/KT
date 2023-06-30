@@ -1,40 +1,66 @@
-import pytest, requests
-
-from requests import Response
+import pytest
+import requests
 from one import fetch
-
-# from mocks.functions import mock_api_success, mock_api_failure
+from pytest_vcr import VCR
 
 
 def test_fetch():
-    response = fetch(url="https://api.publicapis.org/entries")
-    data = response.json()
-    count = data["count"]
-    assert response.status_code == 200
-    assert data["count"] == 1425
-
-
-# def test_fetch():
-#     response = fetch(url=)
-#     data = response.json()
-#     with pytest.raises(Exception):
-#         fetch()
+    url = "https://api.publicapis.org/entries"
+    try:
+        data = fetch(url)
+        assert data is not None
+    except Exception as e:
+        pytest.fail(f"error occurred : {str(e)}")
 
 
 """the process of adding dummy data called MOCKING"""
 
 
-# def test_fetch_mocks(mocker):
-#     mocker.patch("requests.get", mock_api_success)
-#     response = fetch(url="test_url")
-#     data = response.json()
-#     assert response.status_code == 200
-#     assert data["count"] == 1425
+def test_fetch_mocks(mocker):
+    """create mock response"""
+    expected_data = {"key": "value"}
+    mock_response = mocker.Mock()
+    mock_response.json.return_value = expected_data
+    mock_response.raise_for_status.return_value = None
+
+    """patch request.get to return mock response"""
+
+    mocker.patch("requests.get", return_value=mock_response)
+
+    """call the function"""
+    result = fetch(url="https://api.publicapis.org/entries")
+
+    """Assertion"""
+
+    assert result == expected_data
+    requests.get.assert_called_once_with("https://api.publicapis.org/entries")
+    mock_response.raise_for_status.assert_called_once()
 
 
-# def test_fetch_mocks_failure(mocker):
-#     mocker.patch("requests.get", mock_api_failure)
-#     response = fetch(url="test_url")
-#     data = response.json()
-#     assert response.status_code == 403
-#     assert data["Error"] == "Invalid Authentication"
+def test_fetch_with_mock(mocker):
+    url = "https://api.publicapis.org/entries"
+
+    """mock request.get function"""
+
+    mocked_get = mocker.patch("requests.get")
+    mocked_get.return_value.status_code = 200
+    mocked_get.return_value.json.return_value = {"result": "success"}
+
+    response = fetch(url)
+
+    assert response == {"result": "success"}
+    mocked_get.assert_called_once_with(url)
+
+    """intialize VCR"""
+
+
+vcr = VCR(cassette_library_dir="tests/mocks/functions")
+
+
+@pytest.mark.vcr
+def test_fetch_with_vcr():
+    url = "https://api.publicapis.org/entries"
+    response = fetch(url)
+
+    assert response is not None
+    assert isinstance(response, dict)
