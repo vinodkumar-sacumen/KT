@@ -24,4 +24,4 @@ logging.basicConfig(
     format="%(asctime)s - %(levelname)s - %(message)s",
 )
 
-print(fetch("https://api.publicapis.org/entries"))
+
