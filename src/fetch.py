@@ -7,8 +7,8 @@ def fetch(url):
         response = requests.get(url)
         if response.status_code == 200:
             return response.json()
-        else:
-            raise RuntimeError(f"Request failed {response.status_code}")
+        
+        raise RuntimeError(f"Request failed {response.status_code}")
     except requests.exceptions.RequestException as e:
         """log error message"""
         logging.error(f"failed request : {str(e)}")
@@ -23,5 +23,3 @@ logging.basicConfig(
     level=logging.DEBUG,
     format="%(asctime)s - %(levelname)s - %(message)s",
 )
-
-
