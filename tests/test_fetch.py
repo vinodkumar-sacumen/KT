@@ -1,7 +1,4 @@
-import pytest
 import logging
-import requests
-# import pytest_mock
 from src.fetch import fetch
 
     
