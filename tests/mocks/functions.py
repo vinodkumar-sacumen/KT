@@ -29,6 +29,7 @@ def mock_api_success(*args: List[Any], **kwargs: Dict[str, Any]) -> Response:
     response._content = bytes(json.dumps(result), encoding="utf-8")
     return response
 
+
 def mock_api_failure(*args: List[Any], **kwargs: Dict[str, Any]) -> Response:
     """Mock for authentication error."""
     result = {
