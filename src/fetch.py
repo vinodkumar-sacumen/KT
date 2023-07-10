@@ -9,8 +9,7 @@ def fetch(url):
             return response.json()
         
         
-    except requests.exceptions.RequestException as e:
-        
+    except requests.exceptions.RequestException as e:       
         """log error message"""
         
         logging.error(f"failed request : {str(e)}")
