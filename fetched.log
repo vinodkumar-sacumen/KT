@@ -1,5 +1,5 @@
-2023-07-10 19:15:26,258 - INFO - Api call https://api.publicapis.org/entries successful
-2023-07-10 19:15:26,259 - INFO - Addition success 20
-2023-07-10 19:15:26,259 - ERROR - Invalid Input
-2023-07-10 19:15:26,259 - INFO - Division success 5.0
-2023-07-10 19:15:26,259 - ERROR - Invalid Input
+2023-07-12 11:36:33,982 - INFO - Api call successful for https://api.publicapis.org/entries
+2023-07-12 11:36:33,983 - INFO - Addition success 20 
+2023-07-12 11:36:33,984 - ERROR - Invalid Input
+2023-07-12 11:36:33,984 - INFO - Division success 5.0 
+2023-07-12 11:36:33,984 - ERROR - Invalid Input
