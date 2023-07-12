@@ -1,9 +1,5 @@
 import pytest
-<<<<<<< HEAD
-from src.fetch import add, divide, fetch
-=======
 from src.fetch import fetch, add, divide
->>>>>>> 3f6a0dc (changes done)
 
 from tests.mocks.functions import mock_api_success, mock_api_failure
 

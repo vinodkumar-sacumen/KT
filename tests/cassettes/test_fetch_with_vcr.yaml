@@ -1968,11 +1968,7 @@ interactions:
       Content-Type:
       - application/json
       Date:
-<<<<<<< HEAD
-      - Mon, 10 Jul 2023 07:32:24 GMT
-=======
-      - Tue, 11 Jul 2023 05:13:00 GMT
->>>>>>> 332cdf6 (cassettes added)
+      - Mon, 10 Jul 2023 09:46:15 GMT
       Server:
       - Caddy
       Transfer-Encoding:
@@ -1982,15 +1978,9 @@ interactions:
       X-Rate-Limit-Limit:
       - '10.00'
       X-Rate-Limit-Request-Forwarded-For:
-<<<<<<< HEAD
       - 106.213.80.101
       X-Rate-Limit-Request-Remote-Addr:
-      - 172.17.0.1:59304
-=======
-      - 106.213.86.26
-      X-Rate-Limit-Request-Remote-Addr:
-      - 172.17.0.1:37812
->>>>>>> 332cdf6 (cassettes added)
+      - 172.17.0.1:59882
     status:
       code: 200
       message: OK
