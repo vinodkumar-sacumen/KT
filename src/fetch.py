@@ -1,7 +1,7 @@
 """Fetch python file."""
 
 import logging
-
+from requests import Response
 import requests
 
 logging.basicConfig(
@@ -12,8 +12,8 @@ logging.basicConfig(
 )
 
 
-def fetch(url: str) -> str:
-    """Passing Url.
+def fetch(url: str) -> Response:
+    """Pass Url to the fetch method.
 
     Args:
         url (str): a string.
@@ -32,30 +32,26 @@ def fetch(url: str) -> str:
 fetch("https://api.publicapis.org/entries")
 
 
-def add(num1, num2):
-    """Sum of two number
+def add(num1: int, num2: int) -> int:
+    """Sum of two integer number.
 
     Args:
         num1 (int): a number.
         num2 (int): another number.
 
     Returns:
-        int:result of int which is sum of num1 and num2.
+        int: result of num1 and num2 which is int.
     """
-    try:
-        result = num1 + num2
-        logging.info("Addition success %s ", result)
-        return result
-    except TypeError:
-        logging.error("Invalid Input")
-    return None
+    result = num1 + num2
+    logging.info("Addition success %s ", result)
+    logging.error("Invalid Input")
+    return result
 
 
 add(10, 10)
-add(10, "hi")
 
 
-def divide(num1, num2):
+def divide(num1: int, num2: int) -> int:
     """Division of two number.
 
     Args:
@@ -63,16 +59,12 @@ def divide(num1, num2):
         num2 (int): another number.
 
     Returns:
-        int: result of int which is sum of num1 and num2.
+        int: result of num1 and num2 which is int.
     """
-    try:
-        result = num1 / num2
-        logging.info("Division success %s ", result)
-        return f"result is {result}"
-    except ZeroDivisionError:
-        logging.error("Invalid Input")
-    return None
+    result = num1 // num2
+    logging.info("Division success %s ", result)
+    logging.error("Invalid Input")
+    return result
 
 
 divide(10, 2)
-divide(20, 0)
