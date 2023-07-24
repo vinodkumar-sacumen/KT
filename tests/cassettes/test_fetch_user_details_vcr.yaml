@@ -1,0 +1,69 @@
+interactions:
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.31.0
+    method: GET
+    uri: https://gorest.co.in/public/v2/users/3826971
+  response:
+    body:
+      string: !!binary |
+        H4sIAAAAAAAAAyTJQQqDMBAF0KvIX4eCFdo6q97BA8hHhyZoRklSKRTvXqzLx/sijJDmcb2199rB
+        GBWCztMmpqoL5gkHjQwzBPlwn899LsNipumiH8Z1Vji81EZNEET+nQvLO0PAoYRNsf8AAAD//wMA
+        u1PHHW8AAAA=
+    headers:
+      CF-Cache-Status:
+      - DYNAMIC
+      CF-RAY:
+      - 7eba4ba11b384d75-SIN
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Connection:
+      - keep-alive
+      Content-Encoding:
+      - gzip
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Mon, 24 Jul 2023 07:02:03 GMT
+      NEL:
+      - '{"success_fraction":0,"report_to":"cf-nel","max_age":604800}'
+      Report-To:
+      - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=oZkQ9zk57%2FzZQUVC2kEmS4wvtOW7qmqNrEVY0U2Gi2bEECDbBEKbWPsUlFCujScQlpGWhfy4Bp2pKlx7pHtCYgFXvWn7bKyfbTSEmSPqHu1vsyfGB71%2BxzZtagnlNfg%3D"}],"group":"cf-nel","max_age":604800}'
+      Server:
+      - cloudflare
+      Transfer-Encoding:
+      - chunked
+      alt-svc:
+      - h3=":443"; ma=86400
+      etag:
+      - W/"00cc174c7d1b3f69244d2c05a3c5c879"
+      referrer-policy:
+      - strict-origin-when-cross-origin
+      vary:
+      - Origin
+      x-content-type-options:
+      - nosniff
+      x-download-options:
+      - noopen
+      x-frame-options:
+      - SAMEORIGIN
+      x-permitted-cross-domain-policies:
+      - none
+      x-request-id:
+      - b1045b63-559a-4071-bdbc-d58757fb0c56
+      x-runtime:
+      - '0.015797'
+      x-xss-protection:
+      - '0'
+    status:
+      code: 200
+      message: OK
+version: 1
