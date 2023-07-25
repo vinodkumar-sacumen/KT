@@ -8,21 +8,23 @@ interactions:
       - gzip, deflate
       Connection:
       - keep-alive
+      Content-Type:
+      - application/json
       User-Agent:
       - python-requests/2.31.0
     method: GET
-    uri: https://gorest.co.in/public/v2/users/3826971
+    uri: https://gorest.co.in/public/v2/users/3681784
   response:
     body:
       string: !!binary |
-        H4sIAAAAAAAAAyTJQQqDMBAF0KvIX4eCFdo6q97BA8hHhyZoRklSKRTvXqzLx/sijJDmcb2199rB
-        GBWCztMmpqoL5gkHjQwzBPlwn899LsNipumiH8Z1Vji81EZNEET+nQvLO0PAoYRNsf8AAAD//wMA
-        u1PHHW8AAAA=
+        H4sIAAAAAAAAAzzKywrCMBAF0F+Ru46CKLXMykX/Qy7NaEaSIGbqk/670IXbw/nCImTX9dtDvw+o
+        LArBwDdZLSZbDYlPVgRooWUI4gKn+C/HNqYp+2d9ZfONvlhuWRFw0Rr1DsFZCxdpTp8aBBzdHor5
+        BwAA//8DAOrwwxV+AAAA
     headers:
       CF-Cache-Status:
       - DYNAMIC
       CF-RAY:
-      - 7eba4ba11b384d75-SIN
+      - 7ec2dd16689b3c00-BLR
       Cache-Control:
       - max-age=0, private, must-revalidate
       Connection:
@@ -32,11 +34,11 @@ interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Mon, 24 Jul 2023 07:02:03 GMT
+      - Tue, 25 Jul 2023 07:59:27 GMT
       NEL:
       - '{"success_fraction":0,"report_to":"cf-nel","max_age":604800}'
       Report-To:
-      - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=oZkQ9zk57%2FzZQUVC2kEmS4wvtOW7qmqNrEVY0U2Gi2bEECDbBEKbWPsUlFCujScQlpGWhfy4Bp2pKlx7pHtCYgFXvWn7bKyfbTSEmSPqHu1vsyfGB71%2BxzZtagnlNfg%3D"}],"group":"cf-nel","max_age":604800}'
+      - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=vCGowvF1R2NtU%2FoXrCjTdWKHcX7lWTGDwt08Peok6%2BxIHm2ZwyZBYnizvVhi64Vxs5QJitE%2Bk7dYPBQvaDPsC7G3AvKOfqTmVjVlp8sEmpKjP%2FzRZDmS5p28CHEXNBM%3D"}],"group":"cf-nel","max_age":604800}'
       Server:
       - cloudflare
       Transfer-Encoding:
@@ -44,7 +46,7 @@ interactions:
       alt-svc:
       - h3=":443"; ma=86400
       etag:
-      - W/"00cc174c7d1b3f69244d2c05a3c5c879"
+      - W/"36723e257e7694d0cff9d27f07686365"
       referrer-policy:
       - strict-origin-when-cross-origin
       vary:
@@ -58,9 +60,9 @@ interactions:
       x-permitted-cross-domain-policies:
       - none
       x-request-id:
-      - b1045b63-559a-4071-bdbc-d58757fb0c56
+      - c17e1d62-0325-4e24-89d8-d51d26da6dee
       x-runtime:
-      - '0.015797'
+      - '0.015435'
       x-xss-protection:
       - '0'
     status:

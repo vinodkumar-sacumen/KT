@@ -1,0 +1,103 @@
+interactions:
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json
+      User-Agent:
+      - python-requests/2.31.0
+    method: GET
+    uri: https://gorest.co.in/users
+  response:
+    body:
+      string: !!binary |
+        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
+    headers:
+      CF-Cache-Status:
+      - DYNAMIC
+      CF-RAY:
+      - 7ec2dd175d993c0d-BLR
+      Cache-Control:
+      - no-cache
+      Connection:
+      - keep-alive
+      Content-Encoding:
+      - gzip
+      Content-Type:
+      - text/html; charset=utf-8
+      Date:
+      - Tue, 25 Jul 2023 07:59:27 GMT
+      NEL:
+      - '{"success_fraction":0,"report_to":"cf-nel","max_age":604800}'
+      Report-To:
+      - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=6jXxRVfFV14oPN6TlQWbJ83%2F8Mu2g%2BWhRBP2acy82lWWYXhsQI%2FV1HyqM6pRXd3Ff8OIaiO0wtieuoLh%2BU8qXSyrIjfji8id2XddVdIUp92DrZ3Z8NqKMvYlXepyWA8%3D"}],"group":"cf-nel","max_age":604800}'
+      Server:
+      - cloudflare
+      Transfer-Encoding:
+      - chunked
+      alt-svc:
+      - h3=":443"; ma=86400
+      feature-policy:
+      - camera 'none'; gyroscope 'none'; microphone 'none'; usb 'none'; fullscreen
+        'self'
+      link:
+      - </assets/application-e825b38673cdfd0344172b5f5a753b2b0fe92658f945da08c92158f9b6fb5ced.css>;
+        rel=preload; as=style; nopush
+      referrer-policy:
+      - strict-origin-when-cross-origin
+      set-cookie:
+      - _gorest_session=euO6yHq6Q4bjNZE%2FYZ6G0de8UbK8v8Drm5OFA3mofls4YjWXAU33yLPz%2FjG1ItlTJ6A7yJlmjHRWbes54lQruhTjH%2FVM7abmtfJ0OBbkB7R1b0LZ9h08pSGEyGTFAc31IOOT60syzhfdlCydagtvnevUqO4QnMikGxZgCPPVniVi9c8%2BWYLXDn32upfzKzr8XWJhq1Bc0u9Wxp1L%2BzFUC%2BgPeKhMjEBVM2I5aFQSDr0n3gbYBposgUJZTDLv8XWTO14e%2FEj6X0EaHLf1hHjbRTiYBXggItI%3D--rQCg84Igm4T3YPa%2B--FStlNBnDxY54JQ3mfEKgOA%3D%3D;
+        path=/; HttpOnly; SameSite=Lax
+      x-content-type-options:
+      - nosniff
+      x-download-options:
+      - noopen
+      x-frame-options:
+      - SAMEORIGIN
+      x-permitted-cross-domain-policies:
+      - none
+      x-request-id:
+      - 4b93cdab-af4f-423c-ae5e-45c7e9a34255
+      x-runtime:
+      - '0.011906'
+      x-xss-protection:
+      - '0'
+    status:
+      code: 404
+      message: Not Found
+version: 1

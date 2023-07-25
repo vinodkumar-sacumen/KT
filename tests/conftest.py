@@ -1,9 +1,18 @@
+"""Conftest File."""
+
 import pytest
+from typing import Dict, Any
 
 FILTER_VALUE = "REDACTED"
 
+
 @pytest.fixture(scope="module")
-def vcr_config():
+def vcr_config() -> Dict[Any, Any]:
+    """Vcr config method.
+
+    Returns:
+        Dict: dictionary of configuration.
+    """
     return {
         "filter_headers": [("authorization", FILTER_VALUE)],
         "filter_query_parameters": [
@@ -20,6 +29,5 @@ def vcr_config():
             ("refresh_token", FILTER_VALUE),
             ("access_token", FILTER_VALUE),
         ],
-        "record_mode": "once",
+        "record_mode": "none",
     }
-
