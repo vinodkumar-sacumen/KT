@@ -1,6 +1,6 @@
 import requests
 
-def return_count():
+def fetch():
     '''
     Makes an api call and returns the count 
     '''
