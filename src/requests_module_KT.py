@@ -1,3 +1,4 @@
+"""Script that fetchs all api data"""
 import requests
 
 def return_count():
