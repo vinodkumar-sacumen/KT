@@ -9,6 +9,15 @@ def fetch():
 count = fetch()
 print(count)
 
+def add_two_numbers(num1,num2):
+    '''
+    Adds two numbers
+    '''
+    result = num1 + num2 
+    return result
+
+sum_value = add_two_numbers(20,20)
+print(sum_value)
 
 def subtract(num1: int, num2: int) -> int:
     """Substraction of 2 numbers.
