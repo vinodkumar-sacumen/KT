@@ -12,7 +12,6 @@ print(count)
 def add_two_numbers(num1,num2):
     '''
     Adds two numbers
-     
     '''
     result = num1 + num2 
     return result
