@@ -1,6 +1,5 @@
 """Module for learning coding standards."""
 import requests
-from typing import Any
 
 
 def fetch() -> int:
