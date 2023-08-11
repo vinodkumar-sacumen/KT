@@ -3,7 +3,7 @@ import requests
 from typing import Any
 
 
-def fetch() -> Any:
+def fetch() -> int:
     """Fetch api data.
 
     Returns:
