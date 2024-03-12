@@ -1,3 +1,17 @@
-def add(a,b):
+
+'''This is function of two numbers'''
+
+def add(a:int,b: int)->int:
+    """_summary_
+
+    Args:
+        a (int): Accepts any integer value
+        b (int): Accepts any integer value
+
+    Returns:
+        int: Returns the int type after addition of two numbers
+    """
     return a+b
+
+
 add(5,6)
