@@ -1,0 +1,90 @@
+interactions:
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json
+      User-Agent:
+      - python-requests/2.31.0
+    method: GET
+    uri: https://gorest.co.in/public/v2/users
+  response:
+    body:
+      string: !!binary |
+        H4sIAAAAAAAAA6SUT2vbQBDFv8qyZ8vUzR+7OsnElxJyiaGXUpYX7UQ7ljQyu2ulSul3L7KLrICg
+        Tnr9zcB7+2Z2vv/SbHV6dbtaLFfXMy2oSad6gw4Qto7VxuEFomeaanClU22PwNihJQu5O1TxNdkh
+        xDn9RL2vSM90QWLJ61Q/U40jCRHxEHSqkUduSf+ejeU/D/KP2HGrtg6+xkjZ99iEI86awBJKvkyP
+        ZVJxMSiuy+CwU187kgJ+pIljwfCpkBWNz18hXZI3vmby/yX/aZB/8GGu1pZjB4FYCNSdQzz4liyP
+        3OQDNBh3m9qHrG0kqcgK+XmkEN8/geWXwdA9uEJwastSuJGB8sRN6HnmUNcUkpLJyVQSl+WwXJ33
+        zkFgifZQ69zBd+Px40SMHZqywhPJM1V2ehL/fPTi+ub25rwEsJ7LC6I/9WVPnsqSkupAMRYkF6Q+
+        EUBv4fzx7hxKjxY+slq7ww7qkeJ8HEIPTX5uM55iJpw3FcIHZ9BbuBosbEnm6h7BddjzxAKcCiaQ
+        /N2Ckqsn5GXiUJBQ+OAF6E2cL8CGWhL1rf/pb25Pj017xJlFy+9U+/EHAAD//wMAiefTxPAEAAA=
+    headers:
+      CF-Cache-Status:
+      - DYNAMIC
+      CF-RAY:
+      - 7ec2dd155e9f3c00-BLR
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Connection:
+      - keep-alive
+      Content-Encoding:
+      - gzip
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Tue, 25 Jul 2023 07:59:27 GMT
+      NEL:
+      - '{"success_fraction":0,"report_to":"cf-nel","max_age":604800}'
+      Report-To:
+      - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=%2BsWM3XILIjvP%2BPQYdKRJ1z49c9LqEOeCDl7Mw%2BGRRyfA3wL9FmOQRBmzN64ZQeM6MtyLH7uo5OuQytGcXqm805%2FXk2yqZlkAvXezmovuBUN8vhIvYhuF4NphOdUHqI8%3D"}],"group":"cf-nel","max_age":604800}'
+      Server:
+      - cloudflare
+      Transfer-Encoding:
+      - chunked
+      alt-svc:
+      - h3=":443"; ma=86400
+      etag:
+      - W/"3efa134aa888f97834fafc8ab94b3828"
+      referrer-policy:
+      - strict-origin-when-cross-origin
+      vary:
+      - Origin
+      x-content-type-options:
+      - nosniff
+      x-download-options:
+      - noopen
+      x-frame-options:
+      - SAMEORIGIN
+      x-links-current:
+      - https://gorest.co.in/public/v2/users?page=1
+      x-links-next:
+      - https://gorest.co.in/public/v2/users?page=2
+      x-links-previous:
+      - ''
+      x-pagination-limit:
+      - '10'
+      x-pagination-page:
+      - '1'
+      x-pagination-pages:
+      - '282'
+      x-pagination-total:
+      - '2813'
+      x-permitted-cross-domain-policies:
+      - none
+      x-request-id:
+      - 5ee253dd-3af7-4015-add8-82e2fcacc1e3
+      x-runtime:
+      - '0.043617'
+      x-xss-protection:
+      - '0'
+    status:
+      code: 200
+      message: OK
+version: 1
