@@ -1,5 +1,7 @@
 # KT - Python
 
+This is vinod's new line..
+
 Session that consists of all basic operations.
 
 ## Sessions/Topics
