@@ -1,0 +1,48 @@
+interactions:
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.31.0
+    method: GET
+    uri: https://api.nationalize.io/?name=nathaniel
+  response:
+    body:
+      string: '{"count":49469,"name":"nathaniel","country":[{"country_id":"AA","probability":0.999},{"country_id":"NN","probability":0.888},{"country_id":"LL","probability":0.777},{"country_id":"UU","probability":0.555},{"country_id":"RR","probability":0.222}]}'
+    headers:
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '246'
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Tue, 08 Aug 2023 11:44:53 GMT
+      Server:
+      - nginx/1.16.1
+      access-control-allow-credentials:
+      - 'true'
+      access-control-allow-origin:
+      - '*'
+      access-control-expose-headers:
+      - x-rate-limit-limit,x-rate-limit-remaining,x-rate-limit-reset
+      cache-control:
+      - max-age=0, private, must-revalidate
+      x-rate-limit-limit:
+      - '1000'
+      x-rate-limit-remaining:
+      - '997'
+      x-rate-limit-reset:
+      - '44107'
+      x-request-id:
+      - F3ll02NzQwL5QBsulxOy
+    status:
+      code: 200
+      message: OK
+version: 1
