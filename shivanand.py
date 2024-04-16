@@ -4,6 +4,7 @@ import requests
 BASE_URL = "https://reqres.in/api/users"
 
 def apicall() -> dict:
+    """" API call """
     response = requests.get(BASE_URL)
     return response.json()
 
@@ -30,5 +31,3 @@ class TASK2:
         int: returns sum of num1 and num2
     """
         return num1+num2
-
-    
