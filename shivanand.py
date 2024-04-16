@@ -19,7 +19,6 @@ def sub(num1: int, num2: int) -> int:
     sub = num1 - num2
     return sub
 
-
 class TASK2:
     def add_no(self, num1:int, num2:int) ->int:
         """Addition of 2 numbers.
