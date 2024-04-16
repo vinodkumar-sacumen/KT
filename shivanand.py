@@ -1,11 +1,16 @@
 """ set of tasks """
 import requests
+from requests import Response
 
-BASE_URL = "https://reqres.in/api/users"
 
-def apicall() -> dict:
-    """" API call """
-    response = requests.get(BASE_URL)
+def apicall(url: str) -> Response:
+    """" API call 
+        Args :
+            url (str) : url required to fetch data 
+        Returns :
+            response 
+    """
+    response = requests.get(url)
     return response.json()
 
 def sub(num1: int, num2: int) -> int:
