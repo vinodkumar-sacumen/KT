@@ -9,27 +9,11 @@ logging.basicConfig(
 )
 
 def fetch(url):
-    response = requests.get(url)
+    response = requests.get(url)    # fetch("https://api.publicapis.org/entries")
     if response.status_code == 200:
         data = response.json()
         logging.info(f"Api call {url} successful")
         return data["count"]
     return "wrong url"
-# fetch("https://api.publicapis.org/entries")
 
-def add(num1, num2):
-    try:
-        result = num1 + num2
-        logging.info(f"Addition success {result}")
-        return result
-    except TypeError:
-        logging.error("Invalid Input")
-
-def divide(num1, num2):
-    try:
-        result = num1 / num2
-        logging.info(f"Division success {result}")
-        return result
-    except ZeroDivisionError:
-        logging.error("Invalid Input")
-
+# TODO: Add your code here..
