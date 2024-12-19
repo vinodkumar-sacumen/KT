@@ -50,3 +50,14 @@ def find_difference(num1: int, num2: int) -> int:
         return (num1-num2) if (num1 > num2) else (num2-num1)
     else:
         return "Given input is not as expected"
+
+def divide_features(a,b):
+    try:
+        a=float(a)
+        b=float(b)
+        if b==0:
+            return "Error : Division by zero is not allowed."
+        result=a/b
+        return f"Result : {result}"
+    except ValueError:
+        return "Error : Invalid input. Please enter valid numbers."
