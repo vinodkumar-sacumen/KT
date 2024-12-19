@@ -17,3 +17,15 @@ def fetch(url):
     return "wrong url"
 
 # TODO: Add your code here..
+def add(num1:int,num2:int)->int:
+    """get_sum_of_two_nums
+
+    Args:
+        int (num1): First number
+        int (num2): Second number
+
+    Returns:
+        int: Returns the sum of num1 and num2
+    """
+
+    return num1+num2
