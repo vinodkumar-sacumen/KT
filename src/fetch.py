@@ -17,7 +17,7 @@ def fetch(url):
     return "wrong url"
 
 # TODO: Add your code here..
-def divide_features(a: int, b: int):
+def divide_features(a: int, b: int) -> float:
     try:
         if b==0:
             return "Error : Division by zero is not allowed."
