@@ -51,7 +51,9 @@ def find_difference(num1: int, num2: int) -> int:
     else:
         return "Given input is not as expected"
 
-def divide_features(a: int, b: int):
+
+def divide_features(a: int, b: int) -> float:
+
     try:
         if b==0:
             return "Error : Division by zero is not allowed."
