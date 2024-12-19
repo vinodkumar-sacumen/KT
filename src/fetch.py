@@ -26,4 +26,4 @@ def divide_features(a,b):
         result=a/b
         return f"Result : {result}"
     except ValueError:
-        return "Error : Invalid input. Please enter valid numbers."
+        return "Error : Invalid input. Please enter valid number."
