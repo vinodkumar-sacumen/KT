@@ -17,3 +17,15 @@ def fetch(url):
     return "wrong url"
 
 # TODO: Add your code here..
+def divide_features(a,b):
+    try:
+        a=float(a)
+        b=float(b)
+        if b==0:
+            return  "Error : Division by zero is not allowed."
+        result=a/b
+        return f"Result : {result}"
+    except ValueError:
+        return "Error : Invalid input. Please enter valid numbers."
+    
+    
