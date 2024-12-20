@@ -35,3 +35,18 @@ def divide_features(a: int, b: int) -> float:
         return f"Result : {result}"
     except ValueError:
         return "Error : Invalid input. Please enter valid number."
+
+# def find_difference(num1: int, num2: int) -> int:
+#     """Finding the difference of two numbers
+
+#     Args:
+#         num1 (int): first number
+#         num2 (int): second number
+
+#     Returns:
+#         int: returnn difference of first and second number
+#     """
+#     if (type(num1) == int) and (type(num2) == int ):
+#         return (num1-num2) if (num1 > num2) else (num2-num1)
+#     else:
+#         return "Given input is not as expected"
