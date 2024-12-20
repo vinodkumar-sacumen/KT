@@ -31,14 +31,3 @@ def add(num1:int,num2:int)->int:
 
     return num1+num2
 
-def sub(num1:int,num2:int)->int:
-    """sub
-
-    Args:
-        num1 (int): _description_
-        num2 (int): _description_
-
-    Returns:
-        int: returns sub of num1 and num2
-    """
-    return num1-num2
