@@ -16,4 +16,14 @@ def fetch(url):
         return data["count"]
     return "wrong url"
 
+def multiply(a: int, b: int) -> int:
+    """multiply 2 nos.
+    Args:
+        a (int): num1
+        b (int): num2
+    Returns:
+        int: returns an int that is multipied.
+    """
+    return a * b
+
 # TODO: Add your code here..
