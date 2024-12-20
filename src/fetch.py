@@ -27,3 +27,11 @@ def multiply(a: int, b: int) -> int:
     return a * b
 
 # TODO: Add your code here..
+def divide_features(a: int, b: int) -> float:
+    try:
+        if b==0:
+            return "Error : Division by zero is not allowed."
+        result=a/b
+        return f"Result : {result}"
+    except ValueError:
+        return "Error : Invalid input. Please enter valid number."
