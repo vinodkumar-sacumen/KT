@@ -27,7 +27,8 @@ def multiply(a: int, b: int) -> int:
     return a * b
 
 # TODO: Add your code here..
-def divide_features(a: int, b: int) -> float:
+
+def divide_features(a: int, b: int) -> str:
     try:
         if b==0:
             return "Error : Division by zero is not allowed."
@@ -36,17 +37,33 @@ def divide_features(a: int, b: int) -> float:
     except ValueError:
         return "Error : Invalid input. Please enter valid number."
 
-# def find_difference(num1: int, num2: int) -> int:
-#     """Finding the difference of two numbers
+def find_difference(num1: int, num2: int) -> str:
+    """Finding the difference of two numbers
 
-#     Args:
-#         num1 (int): first number
-#         num2 (int): second number
+    Args:
+        num1 (int): first number
+        num2 (int): second number
 
-#     Returns:
-#         int: returnn difference of first and second number
-#     """
-#     if (type(num1) == int) and (type(num2) == int ):
-#         return (num1-num2) if (num1 > num2) else (num2-num1)
-#     else:
-#         return "Given input is not as expected"
+    Returns:
+        int: returnn difference of first and second number
+    """
+    if (isinstance(num1,int)) and (isinstance(num2,int) ):
+        return  str((num1-num2)) if (num1 > num2) else str((num2-num1))
+    else:
+        return "Given input is not as expected"
+
+
+def add(num1:int,num2:int)->int:
+    """get_sum_of_two_nums
+
+    Args:
+        int (num1): First number
+        int (num2): Second number
+
+    Returns:
+        int: Returns the sum of num1 and num2
+    """
+
+    return num1+num2
+
+
