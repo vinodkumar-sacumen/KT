@@ -37,6 +37,7 @@ def divide_features(a: int, b: int) -> str:
     except ValueError:
         return "Error : Invalid input. Please enter valid number."
 
+
 def find_difference(num1: int, num2: int) -> str:
     """Finding the difference of two numbers
 
@@ -66,4 +67,18 @@ def add(num1:int,num2:int)->int:
     result=num1+num2
     return result
 
-"""This is end of the file.."""
+
+def multiply_features(a: int, b: int) -> int:
+    try:
+        return a * b
+    except TypeError:
+        raise ValueError("Error: Invalid input. Please enter valid integers.")
+
+try:
+    result = multiply_features(10, 3)
+    print(f"Result: {result}")
+except ValueError as e:
+    print(e)
+
+
+
