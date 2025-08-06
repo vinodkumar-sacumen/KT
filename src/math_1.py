@@ -24,4 +24,3 @@ if __name__ == "__main__":
    print("Subtraction:", calc.subtract())
    print("Multiplication:", calc.multiply())
    print("Division:", calc.divide())
-
