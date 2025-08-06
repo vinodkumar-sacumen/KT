@@ -1,5 +1,5 @@
 """
-greeting.py
+shuchitha.py
 
 This module contains a simple class that greets a user by name.
 """
