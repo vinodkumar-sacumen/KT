@@ -1,5 +1,6 @@
 """This module provides a Math class to perform basic arithmetic operations."""
 
+
 class Math:
     """Performs basic arithmetic operations on two float numbers."""
 
@@ -40,7 +41,7 @@ class Math:
 
 
 if __name__ == "__main__":
-    calculator = Math(10, 5)
+    calculator = Math(12, 6)
     print("Addition:", calculator.add())
     print("Subtraction:", calculator.subtract())
     print("Multiplication:", calculator.multiply())
