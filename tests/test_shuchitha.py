@@ -10,7 +10,7 @@ def test_greet_success() -> None:
     assert greeter.greet() == "Hello, Shuchtha! Welcome."
 
 
-def test_greet_with_int() -> None:
+def test_greet_with_integer() -> None:
     """Test that greeting works when passing an integer."""
     assert Greeter(123).greet() == "Hello, 123! Welcome."
 
