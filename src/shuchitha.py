@@ -1,31 +1,31 @@
 """
-shuchitha.py
+shuchitha.py.
 
 This module contains a simple class that greets a user by name.
 """
 
 
 class Greeter:
-    """
-    A simple class to greet a user.
-    """
+    """A simple class to greet a user."""
 
-    def __init__(self, name):
+    def __init__(self, name: str | int | None) -> None:
         """
         Initialize the Greeter with a name.
 
         Args:
-            name (str): The name of the user to greet.
+            name (str | int | None): The name of the user to greet.
         """
-        self.name = name
+        if isinstance(name, list):
+            raise ValueError("List is not a valid name")
+        if name is None:
+            self.name = "Guest"
+        else:
+            self.name = str(name)
 
-    def greet(self):
-        """
-        Print a greeting message.
-        """
-        print(f"Hello, {self.name}! Welcome.")
+    def greet(self) -> str:
+        """Return a greeting message."""
+        return f"Hello, {self.name}! Welcome."
 
-
-# Object creation and method call
-greeter = Greeter("Shuchitha")
-greeter.greet()
+    def get_name(self) -> str:
+        """Return the name of the user."""
+        return self.name
