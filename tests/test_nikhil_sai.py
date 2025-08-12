@@ -7,7 +7,7 @@ from src.nikhil_sai import Circle
 def test_circle_no_params() -> None:
     """Test creating a circle without parameters raises TypeError."""
     with pytest.raises(TypeError):
-        Circle()  # pylint: disable=no-value-for-parameter
+        Circle()
 
 
 def test_circle_negative() -> None:
