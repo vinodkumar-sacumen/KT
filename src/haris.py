@@ -43,7 +43,7 @@ class Math:
 
 
 if __name__ == "__main__":
-    calculator = Math(12.0, 6.0)
+    calculator = Math(14.0, 7.0)
     print("Addition:", calculator.add())
     print("Subtraction:", calculator.subtract())
     print("Multiplication:", calculator.multiply())
