@@ -29,3 +29,5 @@ class Greeter:
     def get_name(self) -> str:
         """Return the name of the user."""
         return self.name
+    
+    #adaded comment
