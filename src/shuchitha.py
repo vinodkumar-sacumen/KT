@@ -37,4 +37,7 @@ class Greeter:
 
     #adaded comment
     #prathyushak adding a comment
+<<<<<<< HEAD
 >>>>>>> dc1fd54 (adding shuchita.py)
+=======
+>>>>>>> c07c8ca (adding shuchita.py)
