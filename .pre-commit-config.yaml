@@ -57,13 +57,13 @@ repos:
       - id: mypy
         args: [--strict, --ignore-missing-imports]
 
-  # - repo: local
-  #   hooks:
-  #     - id: pytest-cov
-  #       name: pytest-cov
-  #       stages: [commit]
-  #       language: system
-  #       entry:  pytest -v --cov=src/
-  #       types: [python]
-  #       pass_filenames: false
-  #       always_run: true
+  - repo: local
+    hooks:
+      - id: pytest-cov
+        name: pytest-cov
+        stages: [commit]
+        language: system
+        entry:  pytest -v --cov=src/
+        types: [python]
+        pass_filenames: false
+        always_run: true
