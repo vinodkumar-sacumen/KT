@@ -28,7 +28,7 @@ def multiply(a: int, b: int) -> int:
 
 # TODO: Add your code here..
 
-def divide_features(a: int, b: int) -> str:
+def divide(a: int, b: int) -> str:
     try:
         if b==0:
             return "Error : Division by zero is not allowed."

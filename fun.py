@@ -1,4 +1,4 @@
-# write a python function to create list and print that list where the values are square of numbers between 1 and 20 
+# write a python function to create list and print that list where the values are square of numbers between 1 and 20
 
 # def printList():
 #     list_ = list()       #create empty list to append values
@@ -8,7 +8,7 @@
 
 #     print(list_)
 
-#     #fucntion call 
+#     #fucntion call
 # printList()
 
 

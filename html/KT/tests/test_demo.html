@@ -39,24 +39,24 @@ def test_add_success()-&gt; None:
     &#34;&#34;&#34;Test cases for add method.&#34;&#34;&#34;
     result = add(num1=10, num2=20)
     assert result == 30
-    
+
 def test_add_negative()-&gt; None:
     &#34;&#34;&#34;test case for add method using string params&#34;&#34;&#34;
     with pytest.raises(TypeError):
         add(num1=&#34;hello&#34;, num2=20)
-            
+
 def test_add_no_params()-&gt; None:
     &#34;&#34;&#34;Test case for no params.&#34;&#34;&#34;
     with pytest.raises(TypeError):
         add()
-        
+
 def test_fetch()-&gt; None:
     &#34;&#34;&#34;Test case for fetch method to check on api response.&#34;&#34;&#34;
     response = fetch(url=&#34;https://api.publicapis.org/entries&#34;)
     data = response.json()
     assert response.status_code == 200
     assert data[&#34;count&#34;] == 1425
-    
+
 def test_fetch_mocks(mocker: Any)-&gt; None:
     &#34;&#34;&#34;test case for fetch method using mocks.
 
@@ -68,8 +68,8 @@ def test_fetch_mocks(mocker: Any)-&gt; None:
     data = response.json()
     assert response.status_code == 200
     assert data[&#39;count&#39;] == 1425
-    
-    
+
+
 def test_fetch_mocks_failure(mocker: Any) -&gt; None:
     &#34;&#34;&#34;Test case for fetch method using failure mock response.
 
@@ -81,8 +81,8 @@ def test_fetch_mocks_failure(mocker: Any) -&gt; None:
     data = response.json()
     assert response.status_code == 403
     assert data[&#39;Error&#39;] == &#34;Invalid Authentication&#34;
-   
-   
+
+
 @pytest.mark.vcr()
 def test_fetch_vcr()-&gt; None:
     &#34;&#34;&#34;Test case for fetch method using VCR&#34;&#34;&#34;
