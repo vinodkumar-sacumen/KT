@@ -31,9 +31,6 @@ class Greeter:
         return self.name
 
 
-
-
-
     #adaded comment
     # added new comment from harish
     #Nikhil sai
