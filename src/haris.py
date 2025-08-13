@@ -12,8 +12,8 @@ class Math:
             first_number (float): The first operand.
             second_number (float): The second operand.
         """
-        self.first_number: float = first_number
-        self.second_number: float = second_number
+        self.first_number = first_number
+        self.second_number = second_number
 
     def add(self) -> float:
         """Return the sum of the two numbers."""
@@ -27,21 +27,23 @@ class Math:
         """Return the product of the two numbers."""
         return self.first_number * self.second_number
 
-    def divide(self) -> float | str:
+    def divide(self) -> float:
         """
         Return the result of division of the two numbers.
 
+        Raises:
+            ZeroDivisionError: If divisor is zero.
+
         Returns:
-            float: Quotient if divisor is not zero.
-            str: Error message if division by zero.
+            float: Quotient of the division.
         """
         if self.second_number == 0:
-            return "Cannot divide by zero"
+            raise ZeroDivisionError("Cannot divide by zero")
         return self.first_number / self.second_number
 
 
 if __name__ == "__main__":
-    calculator = Math(12, 6)
+    calculator = Math(14.0, 7.0)
     print("Addition:", calculator.add())
     print("Subtraction:", calculator.subtract())
     print("Multiplication:", calculator.multiply())
