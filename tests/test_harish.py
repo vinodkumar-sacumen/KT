@@ -56,9 +56,5 @@ def test_add_with_negative_numbers() -> None:
 
 def test_subtract_negative_result() -> None:
     """Test subtraction resulting in a negative value."""
-<<<<<<< HEAD
-    calc = Math(2.0, 5.0)
-=======
     calc = Math(2.0, 4.0)
->>>>>>> main
     assert math.isclose(calc.subtract(), -3.0)
