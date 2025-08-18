@@ -46,3 +46,4 @@ class Rectangle:
 
 
 obj = Rectangle(15.62, 50.0)
+obj = Rectangle(30.0, 50.0)
